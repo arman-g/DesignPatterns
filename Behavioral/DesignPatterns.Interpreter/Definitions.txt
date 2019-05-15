@@ -1,0 +1,7 @@
+﻿== Interpreter Pattern ==
+
+ @ Definition
+
+- Given a language, define a representation for its grammar along with an interpreter 
+  that uses the representation to interpret sentaces in the language.
+- This patern uses Composite patern internally.

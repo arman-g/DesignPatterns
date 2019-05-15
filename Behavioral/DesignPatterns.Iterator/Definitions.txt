@@ -1,0 +1,26 @@
+﻿== Itarator Pattern ==
+
+ @ Intent
+
+- Provid a way to access the elements of an aggregate object 
+  sequentially without exposing its underlying representation.
+- The Itarator pattern defines interfaces for the aggregate and 
+  the iterator, each of which must be implemented for each collection 
+  that is to support the pattern.
+
+
+@ Applicability
+
+- You need to traverse a collection
+- You want to abstract the collection iteration logic
+    Follow SRP and Don't Repeat Yourself (DRY)
+- You do not wish to break encapsulation and espose your collections'
+  internal organization/design globally
+
+
+@ Iterators in C# and .Net
+
+- Aggregate interface: IEnumerable
+- Iterator interface: IEnumerator
+- C# language feature: foreach
+    Operates on any type implementing IEnumerable (including basic arrays)

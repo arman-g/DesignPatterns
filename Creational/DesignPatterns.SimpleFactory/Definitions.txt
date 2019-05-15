@@ -1,0 +1,25 @@
+﻿== Simple Factory Pattern ==
+
+ @ Intent (General Factory Patterns)
+
+-- Separate object creation from the decision of which object to create
+
+- Add new classes and functionality without breaking OCP
+-- Factory-produced objects
+-- Factories themselves (for abstruct factory)
+
+- Store which object to create outside of the program
+-- In a database
+-- In configuration
+
+
+@ Intent (Simple Factory)
+
+-- Encapsulate object creation
+
+- Allows for late-bound decisions regarding instantiation
+-- Configuration-based
+-- Other persistent storage
+-- Input or other dynamic data
+
+- Caller class knows what concrete factory it needs

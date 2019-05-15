@@ -1,0 +1,17 @@
+﻿== Factory Method Pattern ==
+
+ @ Intent
+
+- Add new classes and functionality without breaking OCP
+-- Factory-produced objects
+-- Factories themselves
+
+- Store which object to create outside of the program
+-- In a database
+-- In configuration
+
+@ Applicability
+
+- Legacy Systems
+- Add functionality to controls
+- Sealed classes

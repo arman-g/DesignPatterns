@@ -1,0 +1,59 @@
+﻿== Lazy Load Pattern ==
+
+ @ Intent
+- A Lazy Load interrupts the object loading proccess for the moment,
+  leaving a marker in the object structure so that if the data is needed
+  it can be loaded only when it is used.
+- Variants: lasy initialization, virtual proxy, value holder, ghost.
+
+
+@ Applicability
+- Fetching an object requires an extra call for the data, and the data 
+  you're fetching isn't used when the main object is used.
+- Avoid using it unless or until you need it. Use it as a tuning mechanism.
+- Need to balance amount of data being fetched with number of 
+  data requests being made.
+
+
+@ Lazy Initialization
+- Simplest approach.
+- Every property checks to see if its backing field has been initialized:
+    * If so, it calculates or fetches the value for the field before returning
+    * Violates Don't Repeat Yourself principle (See Principles of OO Design course)
+- Requires all access to the value to go through the property:
+    * Within the class, nothing but the property should be access the field
+- Requires knowledge of whether the field has been calculated:
+    * Typically check if the field is null
+	* if null is a legal value, then another approach is required
+
+
+@ Virtual Proxy
+- Proxy looks just like the real object.
+- Can intreduce identity problems:
+    * Proxy isn't really the object - different object identities and states
+	* Override the equality method (Equals())
+- May need to create many virtual proxies:
+    * Best done via some kind of code generation
+	* Many OR/M tools create dynamic proxies at runtime (nHibernate, Entity Framework)
+
+
+@ Value Holder
+- Provides lazy load functionality without encapsulation.
+- Calling code knows it is working with a Value Holder type.
+- Requires creating several new types:
+    * ValueHolder
+	* IValueLoader
+	* Factory or Mapper classes
+- ValueHolder uses IValueLoader via Strategy Pattern to 
+  load value when accessed.
+- ValueHolder and IValueLoader are reusable.
+
+
+@ Ghosts
+- A ghost is a real object in a partial state.
+- Initially, the ghost only contains its id.
+- Whenever any property is accessed, the ghost class loads all of its
+  state from the persistence.
+- Essentially, the object is its own virtual proxy:
+    * Note, this violates the Single Responsibility Principle
+- Avoids identity concerns of virtual proxy technique.

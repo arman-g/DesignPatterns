@@ -1,0 +1,15 @@
+﻿
+== Decorator / Wrapper Pattern ==
+
+ @ Intent
+
+- Add Functionality to existing objects dynamically
+- Alternative to sub classing
+- Flexible design
+- Support Open Closed Principle
+
+@ Applicability
+
+- Legacy Systems
+- Add functionality to controls
+- Sealed classes

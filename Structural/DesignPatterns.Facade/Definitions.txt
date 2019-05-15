@@ -1,0 +1,15 @@
+﻿== Facade Pattern ==
+
+ @ Intent
+
+- Provide a simple, purpose-built interface to a larger, more complex body of code or interfaces
+- Make complex body of code simpler to consume and use
+- Expose a set of complex object interactions with a single interface
+- Wrap a poorly designed API in a better designed one
+
+@ Applicability
+
+- Wrap complex or multiple APIs under a simple interface (single function call)
+- Cover up poorly written code to make it easier to consume
+- Data Access
+- File and Stream IO

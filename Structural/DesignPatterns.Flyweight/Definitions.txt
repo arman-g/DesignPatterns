@@ -1,0 +1,16 @@
+﻿== Flyweight Pattern ==
+
+ @ Intent
+
+- Reduce storage costs for large number of objects
+- Share objects to be used in multiple contexts simultaneously
+- Retain objects oriented granularity and flexibility
+
+@ Consequences
+
+- Group of objects are replaced by a few shared objects once extrinsic state is removed
+- Storage savings are derived from
+   * Reduced instances
+   * Amount of intrinsic state per object
+   * Whether extinsic state is computed or stored
+- Application can no longer depend on object's identity

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Behavioral\DesignPatterns.EventAggregator\DesignPatterns.EventAggregator.csproj" />
+    <ProjectReference Include="..\..\Behavioral\DesignPatterns.Interpreter\DesignPatterns.Interpreter.csproj" />
+    <ProjectReference Include="..\..\Behavioral\DesignPatterns.Iterator\DesignPatterns.Iterator.csproj" />
+    <ProjectReference Include="..\..\Behavioral\DesignPatterns.LazyLoad\DesignPatterns.LazyLoad.csproj" />
+    <ProjectReference Include="..\..\Behavioral\DesignPatterns.NullObject\DesignPatterns.NullObject.csproj" />
+    <ProjectReference Include="..\..\Creational\DesignPatterns.AbstractFactory\DesignPatterns.AbstractFactory.csproj" />
+    <ProjectReference Include="..\..\Creational\DesignPatterns.FactoryMethod\DesignPatterns.FactoryMethod.csproj" />
+    <ProjectReference Include="..\..\Creational\DesignPatterns.SimpleFactory\DesignPatterns.SimpleFactory.csproj" />
+    <ProjectReference Include="..\..\Creational\DesignPatterns.Singleton\DesignPatterns.Singleton.csproj" />
+    <ProjectReference Include="..\..\Shared\CommonObjects\DesignPatterns.CommonObjects.csproj" />
+    <ProjectReference Include="..\..\Structural\DesignPatterns.Composite\DesignPatterns.Composite.csproj" />
+    <ProjectReference Include="..\..\Structural\DesignPatterns.Decorator\DesignPatterns.Decorator.csproj" />
+    <ProjectReference Include="..\..\Structural\DesignPatterns.Facade\DesignPatterns.Facade.csproj" />
+    <ProjectReference Include="..\..\Structural\DesignPatterns.Flyweight\DesignPatterns.Flyweight.csproj" />
+  </ItemGroup>
+
+</Project>

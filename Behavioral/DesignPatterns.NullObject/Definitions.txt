@@ -1,0 +1,15 @@
+﻿== Null Object Pattern ==
+
+ @ Intent
+
+- Rid program logic of null checks where posible
+- Provide a non-functional object in place of a null reference
+- Allow methods to be called on Null objects, unlike a null reference
+
+@ Applicability
+
+- When handling of null should be abstracted from the client
+- When an object requires a collaborator
+- Examples:
+-- Implementing a Null Strategy object when we don't want work to actually be done by the strategy executor
+-- Implementing a Nul Command object when we want the command executor to do nothing

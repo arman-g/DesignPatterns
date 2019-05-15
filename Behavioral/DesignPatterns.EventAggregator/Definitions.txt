@@ -1,0 +1,17 @@
+﻿== Event Aggregator Pattern ==
+
+ @ Intent
+
+- Simplify event registration by providing a single centralized store
+- Reduce coupling between publishers and subscribers
+- Reduce friction for introducing new events
+- Reduce memory management issues related to eventing
+
+@ Applicability
+
+- You are building a composite application
+- You have complex screens
+- You have many publishers and subscribers
+- You have many events
+- New events are added frequently
+- Static events are a red flag

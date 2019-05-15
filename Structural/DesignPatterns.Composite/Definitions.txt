@@ -1,0 +1,9 @@
+﻿
+== Composite Pattern ==
+
+@ Applicability
+
+- Groups or Collections
+- Can you add an interface
+- Trees
+- Distribution
